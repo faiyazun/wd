@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; 
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Tablebox {
+  width: 80%;
+  max-width: 500px;
+  background: rgb(114, 114, 114);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+}
+
+.form-title {
+  text-align: center;
+  color: rgb(232, 1, 1);
+  margin-bottom: 20px;
+}
+
+.user-input-box {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: red;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #234560;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.gender-details-box {
+  margin-bottom: 20px;
+}
+
+.gender-title {
+  font-weight: bold;
+}
+
+.gender-category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.gender-category label {
+  margin-right: 10px;
+}
+
+.form-submit-btn {
+  text-align: center;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="Tablebox">
+      <div class="container">
+        <h1 class="form-title">Registration Form</h1>
+        <form action="#">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="fullname">FULL NAME</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name"/>
+            </div>
+            <div class="user-input-box">
+              <label for="username">USER NAME</label>
+              <input type="text" id="username" name="username" placeholder="Enter UserName"/>
+            </div>
+            <div class="user-input-box">
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="email" placeholder="Enter Email"/>
+            </div>
+            <div class="user-input-box">
+              <label for="phonenumber">PHONE NUMBER</label>
+              <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter Phone number"/>
+            </div>
+            <div class="user-input-box">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" placeholder="Enter Password"/>
+            </div>
+            <div class="user-input-box">
+              <label for="confirmpassword">CONFIRM PASSWORD</label>
+              <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Enter Confirm Password"/>
+            </div>
+          </div>
+          <div class="gender-details-box">
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male">
+              <label for="male">MALE</label>
+              <input type="radio" name="gender" id="female">
+              <label for="female">FEMALE</label>
+              <input type="radio" name="gender" id="other">
+              <label for="other">OTHERS</label>
+            </div>
+          </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
